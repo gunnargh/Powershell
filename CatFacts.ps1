@@ -1,0 +1,1 @@
+(New-Object -ComObject SAPI.SPVoice).Speak((ConvertFrom-Json (Invoke-WebRequest -Uri 'http://catfacts-api.appspot.com/api/facts  ')).facts[0])
