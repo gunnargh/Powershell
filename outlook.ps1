@@ -16,7 +16,7 @@ $Data.Mail = $mail
 	}
 $object += $data
 }
-
+$Folder = $Namespace.Folders.Item(1).folders
 $senders = $object.mail.sender.name | select -unique
 foreach($sender in $senders) {
 	$Folder.add($sender)
